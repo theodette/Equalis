@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { FaLaptopCode, FaMicrochip, FaMobileAlt, FaHandsHelping, FaGamepad } from "react-icons/fa";
-
+import { Link } from "react-router-dom"
 
 export default function Services() {
   const services = [
@@ -106,12 +106,12 @@ export default function Services() {
               >
                 Join Us
               </a>
-              <a
+              <Link
                 href="/contact"
                 className="bg-gray-200 text-gray-800 px-6 py-3 rounded-full shadow-md hover:bg-gray-300 transition"
               >
                 Contact Us
-              </a>
+              </Link>
             </div>
           </div>
           <div className="flex justify-center">
