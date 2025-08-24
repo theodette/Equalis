@@ -2,6 +2,7 @@
 import { HiOutlineMail, HiOutlinePhone, HiOutlineCalendar, HiOutlineLocationMarker, HiOutlineStatusOffline, HiOutlineDesktopComputer, HiOutlineLink } from "react-icons/hi";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 //import { Helmet } from "react-helmet-async";
+
 const Contact = () => {
 
  const ig =""

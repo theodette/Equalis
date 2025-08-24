@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import { FaLightbulb, FaGlobe } from "react-icons/fa";
+import { Link } from "react-router-dom"
+
 
 export default function About() {
   const joinUs =

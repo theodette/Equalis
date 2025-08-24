@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { FaLaptopCode, FaMicrochip, FaMobileAlt, FaHandsHelping, FaGamepad } from "react-icons/fa";
 
+
 export default function Services() {
   const services = [
     {
@@ -28,7 +29,6 @@ export default function Services() {
       icon: <FaHandsHelping className="text-4xl text-green-600 mb-4" />,
     },
   ];
-const joinUs ="https://docs.google.com/forms/d/1TDQJ6AY6TNKT3zI0YO6u9SHCoRXm0OGbgGX4EEV1Z0I/edit"
 
   return (
     <section className="bg-[#ccffcc] py-20">
