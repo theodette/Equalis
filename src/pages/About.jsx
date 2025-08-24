@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 import { FaLightbulb, FaGlobe } from "react-icons/fa";
 
 export default function About() {
-
-  const joinUs ="https://docs.google.com/forms/d/1TDQJ6AY6TNKT3zI0YO6u9SHCoRXm0OGbgGX4EEV1Z0I/edit"
+  const joinUs =
+    "https://docs.google.com/forms/d/1TDQJ6AY6TNKT3zI0YO6u9SHCoRXm0OGbgGX4EEV1Z0I/edit";
 
   const team = [
     {
@@ -20,53 +20,48 @@ export default function About() {
       description:
         "Basketball player and software engineer focused on bridging technology and disability to create innovative, inclusive solutions.",
     },
-    
   ];
 
   return (
     <section className="bg-[#ccffcc] text-gray-900">
+      {/* Hero / Intro Section */}
+      <div className="bg-gradient-to-b from-green-50 to-green-100">
+        <div className="max-w-6xl mx-auto px-6 py-24 md:py-32 flex flex-col md:flex-row items-center md:items-start gap-12">
+          {/* Text Section */}
+          <motion.div
+            className="flex-1 text-center md:text-left"
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 md:mb-8 leading-tight">
+              About <span className="text-green-600">Equalis</span>
+            </h1>
+            <p className="text-gray-700 text-base sm:text-lg md:text-xl leading-relaxed md:leading-loose max-w-lg">
+              Equalis is a social impact startup committed to creating inclusive
+              technologies that empower people of all abilities. Our mission is
+              to design solutions that break down barriers in sports, education,
+              communication, and everyday life, ensuring equal opportunities for
+              everyone.
+            </p>
+          </motion.div>
 
-{/* Hero / Intro Section */}
-<div className="bg-gradient-to-b from-green-50 to-green-100">
-  <div className="max-w-6xl mx-auto px-6 py-24 md:py-32 flex flex-col md:flex-row items-center md:items-start gap-12">
-
-    {/* Text Section */}
-    <motion.div
-      className="flex-1 text-center md:text-left"
-      initial={{ opacity: 0, x: -50 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.8 }}
-    >
-      <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 md:mb-8 leading-tight">
-        About <span className="text-green-600">Equalis</span>
-      </h1>
-      <p className="text-gray-700 text-base sm:text-lg md:text-xl leading-relaxed md:leading-loose max-w-lg">
-        Equalis is a social impact startup committed to creating inclusive technologies that empower people of all abilities. 
-        Our mission is to design solutions that break down barriers in sports, education, communication, and everyday life, 
-        ensuring equal opportunities for everyone.
-      </p>
-   
-    </motion.div>
-
-    {/* Image Section */}
-    <motion.div
-      className="flex-1 w-full max-w-md md:max-w-full rounded-xl overflow-hidden shadow-xl"
-      initial={{ opacity: 0, x: 50 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.8, delay: 0.2 }}
-    >
-      <img
-        src="/5.jpeg"
-        alt="Equalis team working"
-        className="w-full h-80 md:h-96 object-cover rounded-xl"
-      />
-      <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent rounded-xl"></div>
-    </motion.div>
-
-  </div>
-</div>
-
-
+          {/* Image Section */}
+          <motion.div
+            className="flex-1 w-full max-w-md md:max-w-full rounded-xl overflow-hidden shadow-xl"
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
+            <img
+              src="/5.jpeg"
+              alt="Equalis team working"
+              className="w-full h-80 md:h-96 object-cover rounded-xl"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent rounded-xl"></div>
+          </motion.div>
+        </div>
+      </div>
 
       {/* What We Do */}
       <div className="max-w-5xl mx-auto px-6 py-20 text-center">
@@ -81,21 +76,28 @@ export default function About() {
 
         <div className="grid gap-10 md:grid-cols-3 text-left">
           <div className="bg-white p-8 rounded-2xl shadow hover:shadow-xl transition">
-            <h3 className="text-xl font-semibold mb-4">Assistive Technologies</h3>
+            <h3 className="text-xl font-semibold mb-4">
+              Assistive Technologies
+            </h3>
             <p className="text-gray-600">
-              We create tools that help people with different abilities participate fully in sports and daily life.
+              We create tools that help people with different abilities
+              participate fully in sports and daily life.
             </p>
           </div>
           <div className="bg-white p-8 rounded-2xl shadow hover:shadow-xl transition">
             <h3 className="text-xl font-semibold mb-4">Innovative Alerts</h3>
             <p className="text-gray-600">
-              Our solutions provide visual, vibration, and alternative alerts where sound or traditional communication is not enough.
+              Our solutions provide visual, vibration, and alternative alerts
+              where sound or traditional communication is not enough.
             </p>
           </div>
           <div className="bg-white p-8 rounded-2xl shadow hover:shadow-xl transition">
-            <h3 className="text-xl font-semibold mb-4">Community Partnerships</h3>
+            <h3 className="text-xl font-semibold mb-4">
+              Community Partnerships
+            </h3>
             <p className="text-gray-600">
-              We collaborate with organizations and institutions to ensure equal access and participation across all sectors.
+              We collaborate with organizations and institutions to ensure equal
+              access and participation across all sectors.
             </p>
           </div>
         </div>
@@ -154,9 +156,15 @@ export default function About() {
                 alt={member.name}
                 className="w-40 sm:w-48 md:w-56 h-40 sm:h-48 md:h-56 mx-auto rounded-md object-cover mb-4 sm:mb-6 border-2 border-green-500"
               />
-              <h3 className="text-lg sm:text-xl font-semibold mb-1">{member.name}</h3>
-              <p className="text-sm sm:text-base text-gray-600 mb-2">{member.role}</p>
-              <p className="text-sm sm:text-base text-gray-600">{member.description}</p>
+              <h3 className="text-lg sm:text-xl font-semibold mb-1">
+                {member.name}
+              </h3>
+              <p className="text-sm sm:text-base text-gray-600 mb-2">
+                {member.role}
+              </p>
+              <p className="text-sm sm:text-base text-gray-600">
+                {member.description}
+              </p>
             </motion.div>
           ))}
         </div>
@@ -174,15 +182,14 @@ export default function About() {
           >
             Join Us
           </a>
-          <a
+          <Link
             href="/contact"
             className="bg-green-700  text-white px-6 py-2 rounded-xl shadow hover:bg-[#18392B] transition"
           >
             Contact Us
-          </a>
+          </Link>
         </div>
       </div>
-
     </section>
   );
 }

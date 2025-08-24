@@ -49,7 +49,7 @@ const joinUs ="https://docs.google.com/forms/d/1TDQJ6AY6TNKT3zI0YO6u9SHCoRXm0OGb
             {/* Desktop Text */}
             <p className="hidden md:block text-gray-300 font-semibold text-xl">
               your idea deserves to be brought to life. We offer IoT projects, web and mobile app development...
-              <a className="text-[#B8FFB8]" href="/services"> View More</a>
+              <Link className="text-[#B8FFB8]" href="/services"> View More</Link>
             </p>
             <Link to='/about' className='hidden md:flex bg-[#B8FFB8] p-1 text-green-600 text-xl  font-bold rounded-lg w-1/2'>About Us</Link>
           </motion.div>
