@@ -7,6 +7,7 @@ import React, { useRef } from "react";
 import { motion, useInView } from 'framer-motion';
 import { NavLink } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Link } from "react-router-dom"
 import { FaQuoteLeft, FaQuoteRight, FaUsers, FaLightbulb, FaHandsHelping, FaGlobe } from "react-icons/fa";
 
 const Index = ({ interval = 3000 }) => {
@@ -19,7 +20,7 @@ const Index = ({ interval = 3000 }) => {
     { title: "Impact", text: "Our solutions must change lives", icon: <FaGlobe className="text-3xl text-green-600 mb-4" /> },
     { title: "Collaboration", text: "Together, we build a more equal world", icon: <FaHandsHelping className="text-3xl text-green-600 mb-4" /> },
   ];
-
+const joinUs ="https://docs.google.com/forms/d/1TDQJ6AY6TNKT3zI0YO6u9SHCoRXm0OGbgGX4EEV1Z0I/edit"
   return (
     <div className="relative h-full w-full bg-[#ccffcc] flex flex-col items-center justify-center text-[#D9D9D9] overflow-hidden">
 
@@ -42,7 +43,7 @@ const Index = ({ interval = 3000 }) => {
             {/* Mobile Text */}
             <h2 className="md:hidden text-xl font-semibold text-[#18392B]">
               your idea deserves to be brought to life. We offer IoT projects, web and mobile app development...
-              <a className="text-green-600" href="/services"> View More</a>
+              <Link to="/services" className="text-green-600" > View More</Link>
             </h2>
 
             {/* Desktop Text */}
@@ -50,7 +51,7 @@ const Index = ({ interval = 3000 }) => {
               your idea deserves to be brought to life. We offer IoT projects, web and mobile app development...
               <a className="text-[#B8FFB8]" href="/services"> View More</a>
             </p>
-            <a href='/about' className='hidden md:flex bg-[#B8FFB8] p-1 text-green-600 text-xl font-bold rounded-lg w-1/2'>About Us</a>
+            <Link to='/about' className='hidden md:flex bg-[#B8FFB8] p-1 text-green-600 text-xl  font-bold rounded-lg w-1/2'>About Us</Link>
           </motion.div>
 
           {/* Hero Images */}
@@ -157,9 +158,9 @@ const Index = ({ interval = 3000 }) => {
 
       {/* ================= CONTACT SECTION ================= */}
       <section className="px-4 sm:px-10 md:px-20 py-10 flex justify-center">
-        <a href='/contact' className='bg-green-600 px-6 py-2 text-[#B8FFB8] text-xl font-bold rounded-lg hover:bg-[#18392B]'>
+        <Link to='/contact' className='bg-green-600 px-6 py-2 text-[#B8FFB8] text-xl font-bold rounded-lg hover:bg-[#18392B]'>
           Contact us today
-        </a>
+        </Link>
       </section>
 
     </div>

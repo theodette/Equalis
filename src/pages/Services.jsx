@@ -28,6 +28,7 @@ export default function Services() {
       icon: <FaHandsHelping className="text-4xl text-green-600 mb-4" />,
     },
   ];
+const joinUs ="https://docs.google.com/forms/d/1TDQJ6AY6TNKT3zI0YO6u9SHCoRXm0OGbgGX4EEV1Z0I/edit"
 
   return (
     <section className="bg-[#ccffcc] py-20">
@@ -96,7 +97,7 @@ export default function Services() {
             </p>
             <div className="flex flex-wrap gap-4">
               <a
-                href=""
+                href={joinUs}
                 className="bg-green-600 text-white px-6 py-3 rounded-full shadow-md hover:bg-green-700 transition"
               >
                 Join Us

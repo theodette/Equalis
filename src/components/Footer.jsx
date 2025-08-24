@@ -18,7 +18,6 @@ const Footer = () => {
             <h2 className="font-bold mb-2">Links</h2>
             <ul className="space-y-2">
               <li><NavLink to="/" className="hover:underline">Home</NavLink></li>
-              <li><NavLink to="/about" className="hover:underline">About Us</NavLink></li>
               <li><NavLink to="/services" className="hover:underline">Service</NavLink></li>
               <li><NavLink to="/contact" className="hover:underline">Contact Us</NavLink></li>
             </ul>
@@ -28,7 +27,7 @@ const Footer = () => {
           <div>
             <h2 className="font-bold mb-2">Contacts</h2>
             <ul className="space-y-2">
-              <li>Email: info@equalis.com</li>
+              <li>Email: equalistech@equalis.com</li>
               <li>Address: Kigali, Rwanda</li>
             </ul>
           </div>

@@ -2,6 +2,9 @@ import { motion } from "framer-motion";
 import { FaLightbulb, FaGlobe } from "react-icons/fa";
 
 export default function About() {
+
+  const joinUs ="https://docs.google.com/forms/d/1TDQJ6AY6TNKT3zI0YO6u9SHCoRXm0OGbgGX4EEV1Z0I/edit"
+
   const team = [
     {
       name: "Norbert Izere Rukundo",
@@ -166,7 +169,7 @@ export default function About() {
         </h2>
         <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6">
           <a
-            href="/join"
+            href={joinUs}
             className="bg-green-700  text-white px-6 py-2 rounded-xl shadow hover:bg-[#18392B] transition"
           >
             Join Us
